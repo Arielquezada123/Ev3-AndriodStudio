@@ -32,6 +32,12 @@ class PostLogin : AppCompatActivity() {
                         .replace(R.id.frameLayout, SettingsFragment()).commit()
                     true
                 }
+                R.id.nav_agregar -> {
+                    // Muestra el fragment de agregar
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.frameLayout, AgregarFragment()).commit()
+                    true
+                }
                 else -> false
             }
         }
