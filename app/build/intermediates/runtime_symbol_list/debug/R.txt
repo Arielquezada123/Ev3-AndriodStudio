@@ -3224,6 +3224,7 @@ int id browser_actions_menu_item_icon 0x7f080066
 int id browser_actions_menu_item_text 0x7f080067
 int id browser_actions_menu_items 0x7f080068
 int id browser_actions_menu_view 0x7f080069
+int id btnEliminaritem 0x7f08020f
 int id btnGuardar 0x7f08006a
 int id btnLogin 0x7f08006b
 int id btnLogout 0x7f08006c
@@ -3507,6 +3508,7 @@ int id right_icon 0x7f080181
 int id right_side 0x7f080182
 int id rounded 0x7f080183
 int id row_index_key 0x7f080184
+int id rvProductos 0x7f080210
 int id save_non_transition_alpha 0x7f080185
 int id save_overlay_view 0x7f080186
 int id sawtooth 0x7f080187
@@ -3620,6 +3622,8 @@ int id transition_position 0x7f0801f2
 int id transition_scene_layoutid_cache 0x7f0801f3
 int id transition_transform 0x7f0801f4
 int id triangle 0x7f0801f5
+int id tvDescripcion 0x7f080211
+int id tvNombre 0x7f080212
 int id tvTitulo 0x7f0801f6
 int id unchecked 0x7f0801f7
 int id uniform 0x7f0801f8
@@ -3763,6 +3767,7 @@ int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_main 0x7f0b001c
 int layout activity_post_login 0x7f0b001d
+int layout activity_ver_productos 0x7f0b0070
 int layout browser_actions_context_menu_page 0x7f0b001e
 int layout browser_actions_context_menu_row 0x7f0b001f
 int layout custom_dialog 0x7f0b0020
@@ -3784,6 +3789,7 @@ int layout design_text_input_start_icon 0x7f0b002f
 int layout fragment_agregar 0x7f0b0030
 int layout fragment_home 0x7f0b0031
 int layout fragment_settings 0x7f0b0032
+int layout item_productos 0x7f0b0071
 int layout m3_alert_dialog 0x7f0b0033
 int layout m3_alert_dialog_actions 0x7f0b0034
 int layout m3_alert_dialog_title 0x7f0b0035

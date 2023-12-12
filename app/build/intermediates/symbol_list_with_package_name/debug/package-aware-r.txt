@@ -3225,6 +3225,7 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btnEliminaritem
 id btnGuardar
 id btnLogin
 id btnLogout
@@ -3508,6 +3509,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id rvProductos
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3621,6 +3623,8 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvDescripcion
+id tvNombre
 id tvTitulo
 id unchecked
 id uniform
@@ -3764,6 +3768,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
 layout activity_post_login
+layout activity_ver_productos
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout custom_dialog
@@ -3785,6 +3790,7 @@ layout design_text_input_start_icon
 layout fragment_agregar
 layout fragment_home
 layout fragment_settings
+layout item_productos
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

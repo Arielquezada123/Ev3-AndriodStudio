@@ -1,5 +1,13 @@
 [
     {
+        "merged": "com.example.prueba_2.app-mergeDebugResources-44:/layout/item_productos.xml",
+        "source": "com.example.prueba_2.app-main-47:/layout/item_productos.xml"
+    },
+    {
+        "merged": "com.example.prueba_2.app-mergeDebugResources-44:/layout/activity_ver_productos.xml",
+        "source": "com.example.prueba_2.app-main-47:/layout/activity_ver_productos.xml"
+    },
+    {
         "merged": "com.example.prueba_2.app-mergeDebugResources-44:/layout/activity_post_login.xml",
         "source": "com.example.prueba_2.app-main-47:/layout/activity_post_login.xml"
     },

@@ -1,5 +1,6 @@
 package com.example.prueba_2
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -23,7 +24,6 @@ class AgregarFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentAgregarBinding.inflate(inflater, container, false)
         return binding.root
-        
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -54,6 +54,12 @@ class AgregarFragment : Fragment() {
                     Snackbar.make(binding.root, "Error al ingresar el producto", Snackbar.LENGTH_LONG).show()
                 }
         }
+
+        binding.btnVer.setOnClickListener {
+            val intent = Intent(requireContext(), VerProductos::class.java)
+            startActivity(intent)
+        }
+
     }
 }
 
