@@ -23,6 +23,7 @@ class AgregarFragment : Fragment() {
         // Inflate the layout for this fragment
         binding = FragmentAgregarBinding.inflate(inflater, container, false)
         return binding.root
+        
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -35,18 +36,23 @@ class AgregarFragment : Fragment() {
             val descripcion = binding.etDescripcionProducto.text.toString()
             val id = database.child("Productos").push().key
 
-            if(nombre.isEmpty()){
-                binding.etNombreProducto.error="Ingrese un nombre"
+            if (nombre.isEmpty()) {
+                binding.etNombreProducto.error = "Ingrese un nombre"
                 return@setOnClickListener
             }
-            if(descripcion.isEmpty()){
-                binding.etDescripcionProducto.error="Ingrese una descripcion"
+            if (descripcion.isEmpty()) {
+                binding.etDescripcionProducto.error = "Ingrese una descripcion"
                 return@setOnClickListener
             }
-            val producto = Producto(id,nombre,descripcion)
-            database.child(id!!).setValue(producto).addOnSuccessListener {
-                Snackbar.make(binding.root,"Producto ingresado", Snackbar.LENGTH_LONG)
-            }
+            val producto = Producto(id, nombre, descripcion)
+            database.child(id!!).setValue(producto)
+                .addOnSuccessListener {
+                    Snackbar.make(binding.root, "Producto ingresado", Snackbar.LENGTH_LONG).show()
+                }
+                .addOnFailureListener {
+                    // Manejar el caso en que la escritura en la base de datos falla
+                    Snackbar.make(binding.root, "Error al ingresar el producto", Snackbar.LENGTH_LONG).show()
+                }
         }
     }
 }
