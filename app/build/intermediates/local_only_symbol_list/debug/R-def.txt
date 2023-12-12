@@ -14,6 +14,7 @@ drawable person1
 id bottom_nav
 id btnCambiarClave
 id btnContra
+id btnEliminaritem
 id btnGuardar
 id btnLogin
 id btnLogout
@@ -30,6 +31,7 @@ id frameLayout
 id nav_agregar
 id nav_home
 id nav_settings
+id rvProductos
 id switch1
 id switch2
 id tilContraActual
@@ -40,13 +42,17 @@ id tilPassword2
 id tilpassword
 id tiltitulo
 id tilusuario
+id tvDescripcion
+id tvNombre
 id tvTitulo
 layout activity_cambiar_contra2
 layout activity_main
 layout activity_post_login
+layout activity_ver_productos
 layout fragment_agregar
 layout fragment_home
 layout fragment_settings
+layout item_productos
 menu bottom_navigation_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
