@@ -24,8 +24,6 @@ class VerProductos : AppCompatActivity() {
         productosReciclerView.layoutManager = LinearLayoutManager(this)
         productosReciclerView.setHasFixedSize(true)
         productosList = arrayListOf<Producto>()
-
-        // Asegúrate de tener una función onEliminarProductoClick en tu actividad
         adapterProducto = AdapterProducto(productosList, ::onEliminarProductoClick)
         productosReciclerView.adapter = adapterProducto
 
