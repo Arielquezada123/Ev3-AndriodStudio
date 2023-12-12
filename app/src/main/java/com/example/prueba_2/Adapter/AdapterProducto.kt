@@ -1,19 +1,20 @@
 package com.example.prueba_2.Adapter
 
-
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.prueba_2.Models.Producto
 import com.example.prueba_2.R
-import android.view.View
-import android.widget.TextView
 
-class AdapterProducto (private val productos:ArrayList<Producto>):
-RecyclerView.Adapter<AdapterProducto.ViewHolder>(){
+class AdapterProducto(private val productos: ArrayList<Producto>, private val onEliminarProductoClick: (Producto) -> Unit) :
+    RecyclerView.Adapter<AdapterProducto.ViewHolder>() {
+
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val nombre: TextView = itemView.findViewById(R.id.tvNombre)
         val descripcion: TextView = itemView.findViewById(R.id.tvDescripcion)
+        val btnEliminar: View = itemView.findViewById(R.id.btnEliminaritem)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -27,9 +28,13 @@ RecyclerView.Adapter<AdapterProducto.ViewHolder>(){
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val producto = productos[position]
+
         holder.nombre.text = producto.nombre
         holder.descripcion.text = producto.descripcion
+
+
+        holder.btnEliminar.setOnClickListener {
+            onEliminarProductoClick(producto)
+        }
     }
-
-
 }
