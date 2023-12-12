@@ -3225,6 +3225,7 @@ int id browser_actions_menu_item_text 0x7f080067
 int id browser_actions_menu_items 0x7f080068
 int id browser_actions_menu_view 0x7f080069
 int id btnCambiarClave 0x7f08006a
+int id btnContra 0x7f08021c
 int id btnEliminaritem 0x7f08006b
 int id btnGuardar 0x7f08006c
 int id btnLogin 0x7f08006d

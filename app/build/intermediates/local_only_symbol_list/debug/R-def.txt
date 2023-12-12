@@ -12,6 +12,7 @@ drawable lock1
 drawable person1
 id bottom_nav
 id btnCambiarClave
+id btnContra
 id btnEliminaritem
 id btnGuardar
 id btnLogin
