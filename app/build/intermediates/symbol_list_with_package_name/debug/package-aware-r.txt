@@ -3225,10 +3225,12 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btnCambiarClave
 id btnEliminaritem
 id btnGuardar
 id btnLogin
 id btnLogout
+id btnSalir
 id btnVer
 id buttonPanel
 id cache_measures
@@ -3311,7 +3313,10 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id etContraActual
 id etDescripcionProducto
+id etNewPassword
+id etNewPassword2
 id etNombreProducto
 id etpassword
 id etusuario
@@ -3603,9 +3608,13 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
+id tilContraActual
 id tilDescripcionProducto
 id tilNombreProducto
+id tilPassword
+id tilPassword2
 id tilpassword
+id tiltitulo
 id tilusuario
 id time
 id title
@@ -3766,6 +3775,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_cambiar_contra2
 layout activity_main
 layout activity_post_login
 layout activity_ver_productos

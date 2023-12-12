@@ -31,6 +31,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.Prueba_2" >
         <activity
+            android:name="com.example.prueba_2.CambiarContraActivity2"
+            android:exported="false" />
+        <activity
             android:name="com.example.prueba_2.VerProductos"
             android:exported="false" />
         <activity

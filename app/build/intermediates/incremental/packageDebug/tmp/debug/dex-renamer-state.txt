@@ -1,18 +1,18 @@
-#Tue Dec 12 13:42:44 CLST 2023
+#Tue Dec 12 17:32:56 CLST 2023
 base.0=C\:\\Users\\ariel\\Prueba_2\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\ariel\\Prueba_2\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\ariel\\Prueba_2\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
-base.3=C\:\\Users\\ariel\\Prueba_2\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
-base.4=C\:\\Users\\ariel\\Prueba_2\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex
-base.5=C\:\\Users\\ariel\\Prueba_2\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
-base.6=C\:\\Users\\ariel\\Prueba_2\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
+base.3=C\:\\Users\\ariel\\Prueba_2\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
+base.4=C\:\\Users\\ariel\\Prueba_2\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex
+base.5=C\:\\Users\\ariel\\Prueba_2\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\8\\classes.dex
+base.6=C\:\\Users\\ariel\\Prueba_2\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=11/classes.dex
-path.3=6/classes.dex
-path.4=8/classes.dex
-path.5=classes2.dex
-path.6=3/classes.dex
+path.3=3/classes.dex
+path.4=6/classes.dex
+path.5=8/classes.dex
+path.6=classes2.dex
 renamed.0=classes.dex
 renamed.1=classes2.dex
 renamed.2=classes3.dex
