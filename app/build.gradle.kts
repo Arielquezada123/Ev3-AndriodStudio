@@ -11,7 +11,7 @@ android {
     defaultConfig {
         applicationId = "com.example.prueba_2"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -54,6 +54,7 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment-ktx:2.3.5")
     implementation("androidx.navigation:navigation-ui-ktx:2.3.5")
     implementation("com.google.firebase:firebase-database")
+    implementation("com.google.firebase:firebase-database-ktx:20.3.0")
 
 
     testImplementation("junit:junit:4.13.2")

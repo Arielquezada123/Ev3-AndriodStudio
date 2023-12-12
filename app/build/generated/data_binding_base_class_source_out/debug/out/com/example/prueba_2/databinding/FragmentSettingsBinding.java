@@ -12,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.prueba_2.R;
+import com.google.android.material.button.MaterialButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -19,6 +20,9 @@ import java.lang.String;
 public final class FragmentSettingsBinding implements ViewBinding {
   @NonNull
   private final FrameLayout rootView;
+
+  @NonNull
+  public final MaterialButton btnContra;
 
   @NonNull
   public final Button btnLogout;
@@ -29,9 +33,10 @@ public final class FragmentSettingsBinding implements ViewBinding {
   @NonNull
   public final Switch switch2;
 
-  private FragmentSettingsBinding(@NonNull FrameLayout rootView, @NonNull Button btnLogout,
-      @NonNull Switch switch1, @NonNull Switch switch2) {
+  private FragmentSettingsBinding(@NonNull FrameLayout rootView, @NonNull MaterialButton btnContra,
+      @NonNull Button btnLogout, @NonNull Switch switch1, @NonNull Switch switch2) {
     this.rootView = rootView;
+    this.btnContra = btnContra;
     this.btnLogout = btnLogout;
     this.switch1 = switch1;
     this.switch2 = switch2;
@@ -64,6 +69,12 @@ public final class FragmentSettingsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnContra;
+      MaterialButton btnContra = ViewBindings.findChildViewById(rootView, id);
+      if (btnContra == null) {
+        break missingId;
+      }
+
       id = R.id.btnLogout;
       Button btnLogout = ViewBindings.findChildViewById(rootView, id);
       if (btnLogout == null) {
@@ -82,7 +93,8 @@ public final class FragmentSettingsBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentSettingsBinding((FrameLayout) rootView, btnLogout, switch1, switch2);
+      return new FragmentSettingsBinding((FrameLayout) rootView, btnContra, btnLogout, switch1,
+          switch2);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
