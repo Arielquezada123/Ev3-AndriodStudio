@@ -5,14 +5,24 @@
     android:layout_height="match_parent"
     tools:context=".HomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+
+    <!-- Mensaje de bienvenida -->
+    <ImageView
+        android:layout_width="266dp"
+        android:layout_height="363dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-130dp"
+        android:contentDescription="Logo"
+        android:src="@drawable/home" />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Home"
-        android:textSize="70dp"
-        android:textAlignment="center"
-        android:paddingTop="250dp"
-        />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp"
+        android:text="¡Bienvenido a la aplicación!"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF" />
+
 
 </FrameLayout>

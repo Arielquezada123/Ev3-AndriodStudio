@@ -6,6 +6,7 @@ color white
 drawable back
 drawable baseline_sensors_24
 drawable baseline_settings_24
+drawable home
 drawable ic_home
 drawable ic_launcher_background
 drawable ic_launcher_foreground

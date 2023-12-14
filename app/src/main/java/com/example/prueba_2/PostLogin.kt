@@ -7,10 +7,6 @@ import com.example.prueba_2.databinding.ActivityPostLoginBinding
 import android.content.Context
 import android.content.SharedPreferences
 
-
-
-
-
 class PostLogin : AppCompatActivity() {
 
     // Nombre de las preferencias compartidas
@@ -41,6 +37,11 @@ class PostLogin : AppCompatActivity() {
             editor.putBoolean(FIRST_TIME_KEY, false)
             editor.apply()
         }
+
+        // Muestra el fragment de home al iniciar la actividad
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.frameLayout, com.example.prueba_2.HomeFragment())
+            .commit()
 
         // Inicializar bottomNav
         binding.bottomNav.setOnItemSelectedListener {
