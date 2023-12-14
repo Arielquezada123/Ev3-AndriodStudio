@@ -3227,8 +3227,10 @@ id browser_actions_menu_items
 id browser_actions_menu_view
 id btnCambiarClave
 id btnContra
+id btnEditaritem
 id btnEliminaritem
 id btnGuardar
+id btnGuardarCambios
 id btnLogin
 id btnLogout
 id btnSalir
@@ -3777,6 +3779,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_cambiar_contra2
+layout activity_editar_producto
 layout activity_main
 layout activity_post_login
 layout activity_ver_productos

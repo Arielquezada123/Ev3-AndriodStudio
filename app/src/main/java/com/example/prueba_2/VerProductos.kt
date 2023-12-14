@@ -1,5 +1,6 @@
 package com.example.prueba_2
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -7,7 +8,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.prueba_2.Adapter.AdapterProducto
 import com.example.prueba_2.Models.Producto
 import com.example.prueba_2.databinding.ActivityVerProductosBinding
-import com.google.firebase.database.*
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 
 class VerProductos : AppCompatActivity() {
     private lateinit var binding: ActivityVerProductosBinding
@@ -24,8 +29,13 @@ class VerProductos : AppCompatActivity() {
         productosReciclerView.layoutManager = LinearLayoutManager(this)
         productosReciclerView.setHasFixedSize(true)
         productosList = arrayListOf<Producto>()
-        adapterProducto = AdapterProducto(productosList, ::onEliminarProductoClick)
+        adapterProducto = AdapterProducto(
+            productosList,
+            ::onEditarProductoClick, // Modificado aquí
+            ::onEliminarProductoClick
+        )
         productosReciclerView.adapter = adapterProducto
+
 
         getProductos()
     }
@@ -57,4 +67,14 @@ class VerProductos : AppCompatActivity() {
             .addOnFailureListener {
             }
     }
+
+    private fun onEditarProductoClick(producto: Producto) {
+        // Lógica para abrir la pantalla de edición (usando Intent y Parcelable)
+        val intent = Intent(this, EditarProductoActivity::class.java)
+        intent.putExtra("PRODUCTO_KEY", producto)
+        adapterProducto.notifyDataSetChanged()
+        startActivity(intent)
+
+    }
+
 }

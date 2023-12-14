@@ -28,9 +28,10 @@
 
     <Button
         android:id="@+id/btnLogout"
-        android:layout_width="wrap_content"
+        android:layout_width="149dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="590dp"
+        android:layout_marginLeft="105dp"
         android:text="Cerrar Sesión" />
 
     <com.google.android.material.button.MaterialButton

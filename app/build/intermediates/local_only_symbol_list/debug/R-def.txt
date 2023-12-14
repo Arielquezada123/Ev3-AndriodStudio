@@ -13,8 +13,10 @@ drawable person1
 id bottom_nav
 id btnCambiarClave
 id btnContra
+id btnEditaritem
 id btnEliminaritem
 id btnGuardar
+id btnGuardarCambios
 id btnLogin
 id btnLogout
 id btnSalir
@@ -45,6 +47,7 @@ id tvDescripcion
 id tvNombre
 id tvTitulo
 layout activity_cambiar_contra2
+layout activity_editar_producto
 layout activity_main
 layout activity_post_login
 layout activity_ver_productos

@@ -21,6 +21,9 @@ public final class ItemProductosBinding implements ViewBinding {
   private final MaterialCardView rootView;
 
   @NonNull
+  public final MaterialButton btnEditaritem;
+
+  @NonNull
   public final MaterialButton btnEliminaritem;
 
   @NonNull
@@ -30,9 +33,10 @@ public final class ItemProductosBinding implements ViewBinding {
   public final TextView tvNombre;
 
   private ItemProductosBinding(@NonNull MaterialCardView rootView,
-      @NonNull MaterialButton btnEliminaritem, @NonNull TextView tvDescripcion,
-      @NonNull TextView tvNombre) {
+      @NonNull MaterialButton btnEditaritem, @NonNull MaterialButton btnEliminaritem,
+      @NonNull TextView tvDescripcion, @NonNull TextView tvNombre) {
     this.rootView = rootView;
+    this.btnEditaritem = btnEditaritem;
     this.btnEliminaritem = btnEliminaritem;
     this.tvDescripcion = tvDescripcion;
     this.tvNombre = tvNombre;
@@ -65,6 +69,12 @@ public final class ItemProductosBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnEditaritem;
+      MaterialButton btnEditaritem = ViewBindings.findChildViewById(rootView, id);
+      if (btnEditaritem == null) {
+        break missingId;
+      }
+
       id = R.id.btnEliminaritem;
       MaterialButton btnEliminaritem = ViewBindings.findChildViewById(rootView, id);
       if (btnEliminaritem == null) {
@@ -83,8 +93,8 @@ public final class ItemProductosBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemProductosBinding((MaterialCardView) rootView, btnEliminaritem, tvDescripcion,
-          tvNombre);
+      return new ItemProductosBinding((MaterialCardView) rootView, btnEditaritem, btnEliminaritem,
+          tvDescripcion, tvNombre);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

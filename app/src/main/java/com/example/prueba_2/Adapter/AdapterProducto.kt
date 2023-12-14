@@ -8,13 +8,14 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.prueba_2.Models.Producto
 import com.example.prueba_2.R
 
-class AdapterProducto(private val productos: ArrayList<Producto>, private val onEliminarProductoClick: (Producto) -> Unit) :
+class AdapterProducto(private val productos: ArrayList<Producto>,private val onEditarProductoClick: (Producto) -> Unit,private val onEliminarProductoClick: (Producto) -> Unit) :
     RecyclerView.Adapter<AdapterProducto.ViewHolder>() {
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val nombre: TextView = itemView.findViewById(R.id.tvNombre)
         val descripcion: TextView = itemView.findViewById(R.id.tvDescripcion)
         val btnEliminar: View = itemView.findViewById(R.id.btnEliminaritem)
+        val btnEditar: View = itemView.findViewById(R.id.btnEditaritem)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
@@ -35,6 +36,10 @@ class AdapterProducto(private val productos: ArrayList<Producto>, private val on
 
         holder.btnEliminar.setOnClickListener {
             onEliminarProductoClick(producto)
+        }
+
+        holder.btnEditar.setOnClickListener {
+            onEditarProductoClick(producto)
         }
     }
 }
