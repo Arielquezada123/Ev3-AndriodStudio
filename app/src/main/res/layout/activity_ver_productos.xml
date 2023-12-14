@@ -11,7 +11,7 @@
         android:layout_marginTop="50dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Listado de productos"
+        android:text="Listado de sensores"
         android:layout_gravity="center_horizontal"
         android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"/>
 

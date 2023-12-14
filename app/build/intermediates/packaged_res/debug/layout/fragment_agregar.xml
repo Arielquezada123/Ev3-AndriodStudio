@@ -10,7 +10,7 @@
         android:id="@+id/tvTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Crear producto"
+        android:text="Ingreso de sensor"
         android:textAppearance="@style/TextAppearance.Material3.HeadlineLarge"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -26,7 +26,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="30dp"
-        android:hint="Nombre producto"
+        android:hint="Nombre sensor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvTitulo">
@@ -45,7 +45,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="30dp"
-        android:hint="Descripción producto"
+        android:hint="Descripción sensor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tilNombreProducto">
@@ -60,7 +60,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Guardar producto"
+        android:text="Guardar sensor"
         android:id="@+id/btnGuardar"
         app:layout_constraintTop_toBottomOf="@id/tilDescripcionProducto"
         app:layout_constraintStart_toStartOf="parent"
@@ -70,7 +70,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ver producto"
+        android:text="Ver sensor"
         android:id="@+id/btnVer"
         app:layout_constraintTop_toBottomOf="@id/btnGuardar"
         app:layout_constraintStart_toStartOf="parent"
